@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo</title>
+        <link rel="stylesheet" href ="./styles/index.css" />
+        <link rel="stylesheet" href ="./styles/checkbox.css" />
+    </head>
+<body>
+    <section>
+        <div class ="create_container">  <!__ создание контейнера __>
+            <input
+                class ="create_input"
+                type ="text"
+                placeholder ="Напишите сюда новую задачу"
+            />
+            <button class ="create_button">Добавить</button>
+        </div>
+
+        <div class ="todo_container">  <!__ это блок с содержимымы элементами __>
+
+            <div class ="todo_item">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>
+
+            <div class ="todo_item marked">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>    
+
+            <div class ="todo_item done">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>
+
+            <div class ="todo_item marked">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>
+
+            <div class ="todo_item">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item done">
+                <div class="todo_item_header"> 
+                    <label class ="checkbox_container"> <!__  __>
+                        <input type ="checkbox" />
+                        <span class ="checkmark"></span>
+                    </label>
+                    <h4>Купить молоко</h4>
+                </div> 
+                <div class ="todo_item_footer"> <!__ тут текст находится с левой стороны а иконки с правой стороны  __>
+                    <p>17.11.2020 <span>17:22</span></p>
+                    <div class ="action_buttons">
+                        <img src ="./icons/empty_star3.ico" />  
+                        <img src=" ./icons/new_trash.ico" /> 
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+
+            
+                
+
+    </section>                                    
+
+    <script src ="./library.js"> </script>
+    
+</body>
+</html>
