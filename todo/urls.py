@@ -18,6 +18,7 @@ from django.urls import path
 from main.views import homepage , test , third
 from django.conf import settings
 from django.conf.urls.static import static
+from main.views import test1, test2, test3
 
 
 urlpatterns = [
@@ -25,5 +26,8 @@ urlpatterns = [
     path('', homepage, name= 'home'),
     path('test', test,  name = 'test'),
     path('test3/', third),
+    path('test1/',test1),
+    path('test2/', test2),
+    path ('test4/', test3),
 ] + static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)\
     + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
