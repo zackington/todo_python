@@ -3,12 +3,14 @@
 <head>
     <meat charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-    <title>Doxument</title>
+    <title>Document</title>
 </head>
 <body>
     <h4>Это тестовая страница</h4>
-    <p> Версия 2 </p>
-    {{ todo.list }}
+    <div> Версия 2 </div>
+    {% for todo in todo_list %}
+        <h3>{{ todo.text }} - {{ todo.created_at }}</h3>
+    {% endfor %}
     
 </body>    
 </html>

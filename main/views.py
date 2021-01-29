@@ -4,9 +4,9 @@ from .models  import ToDo
 def homepage(requests):
     return render(requests, "library.html")
 
-def test(request):
+def test(requests):
     todo_list =ToDo.objects.all()
-    return render(request, "test.html", {"todo_list":todo_list}) 
+    return render(requests, "test.html", {"todo_list":todo_list}) 
 
 #def third(requests):
 #    return HttpResponse("This is page test3")

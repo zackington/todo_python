@@ -26,10 +26,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage, name= 'home'),
-    path('test', test ,name ='castle'),
+    path("test/", test ,name ="test"),
     #path('test3/', third),
     #path('test1/',test1),
     #path('test2/', test2),
     #path ('test4/', test3),
 ] + static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)\
-    + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+  + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
